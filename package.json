@@ -1,0 +1,19 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "pepes",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

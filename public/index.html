@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic Page Needs
+	  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  	<meta charset="utf-8">
+	  	<title>Pepe's Grill</title>
+	  	<meta name="description" content="Delicious, authentic Mexican food at affordable prices!">
+	  	<meta name="author" content="Alessandro Improta">
+
+	  	<!-- Mobile Specific Metas
+		  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<!-- FONT
+	  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+	  	<!-- CSS
+	  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	  	<link rel="stylesheet" href="./styles/css/normalize.css">
+	  	<link rel="stylesheet" href="./styles/css/skeleton.css">
+	  	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+	  	<!-- Favicon
+	  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	</head>
+	<body ng-app="pepes" ng-controller="mainController">
+
+	  	<!-- Primary Page Layout
+	  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	  	<header class="u-full-width row">
+
+		  	<a ui-sref="nav"
+		     	class="menu-toggle"
+		     	role="button"
+		     	ng-click="openToggle()">
+
+		    	<span class="sr-only">Open main menu</span>
+		    	<span class="fas fa-bars" aria-hidden="true"></span>
+		  	</a>
+		  
+		  	<h1 class="logo">PEPE'S GRILL</h1>
+		  
+		  	<nav id="main-menu"
+		       	class="main-menu"
+		       	role="navigation"
+		       	aria-expanded="false"
+		       	aria-label="Main menu">
+
+		    	<a href="#"
+		       		class="menu-close"
+		       		role="button"
+		       		id="main-menu-close"
+		       		aria-expanded="false"
+		       		aria-controls="main-menu"
+		       		aria-label="Close main menu">
+		      		
+		      		<span class="sr-only">Close main menu</span>
+		      		<span class="fas fa-times" aria-hidden="true"></span>
+		    	</a>
+
+			    <ul>
+			      	<li><a ui-sref="home">HOME</a></li>
+			      	<li><a href="#" data-glf-cuid="dafabf6a-c1cf-4bc1-a181-71f7fdf1aadf" data-glf-ruid="dec79a39-f1b7-435f-8a1e-9741110da352">MENU</a></li>
+			      	<li><a ui-sref="catering">CATERING</a></li>
+			      	<li><a ui-sref="contactUs">CONTACT US</a></li>
+			    </ul>
+
+		  	</nav> 
+		</header>
+
+		<ui-view></ui-view>
+
+		<footer class="row">
+
+			<div class="six columns contacts-wrapper">
+				<h5 class="red bold">Reach Us</h5>
+				<a href="#" class="contacts" ng-click="getLoyalty()">
+					<span class="fas fa-map-marker-alt red"></span> 747 N. Main St. Spanish Fork, UT 84660
+				</a>
+				<a href="#" class="contacts">
+					<span class="fas fa-phone red"></span> 801-894-9044
+				</a>
+				<a href="#" class="contacts">
+					<span class="fas fa-envelope red"></span> ppva22@gmail.com
+				</a>
+			</div>
+			<div class="six columns social-media-wrapper">
+				<h5 class="red bold">Follow Us</h5>
+				<a href="https://www.facebook.com/ppsgrill/" 
+					class="social-media">
+					<span class="fab fa-facebook-square"></span>
+				</a>
+				<a href="https://www.yelp.com/biz/pepes-grill-spanish-fork?osq=pepe%27s+mexican+grill"
+					class="social-media">
+					<span class="fab fa-yelp"></span>
+				</a>
+			</div>
+		</footer>
+	<!-- End Document
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+	  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
+	  	<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+	  	<script type="text/javascript" src="./js/app.js"></script>
+	  	<script type="text/javascript" src="./js/mainController.js"></script>
+	</body>
+</html>

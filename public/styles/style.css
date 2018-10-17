@@ -1,0 +1,394 @@
+. {
+	box-sizing: border-box;
+}
+
+.nav-menu {
+	display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: black;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: black;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+	display: none;
+}
+
+
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ aria-expanded="true/false" will be for JavaScript
+*/
+/*.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}*/
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+/*.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;  
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}*/
+
+.home-image {
+	background-image: url("./images/title.jpg");
+}
+
+.catering-image {
+	background-image: url("./images/catering.jpg");
+}
+
+.contactUs-image {
+	background-image: url("./images/contact.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+}
+
+.top {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 515px;
+	width: 100%;
+	text-align: center;
+}
+
+.order-button {
+	height: 200px;
+	background-color: rgba(165, 162, 157, 0.5);
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.order-button span {
+	display: block;
+	padding-bottom: 25px;
+}
+
+.order-button button {
+	width: 100%;
+	background-color: #DC3522;
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+	border: none;
+	border-radius: 10px;
+}
+
+.section-title {
+	padding-top: 35px;
+	font-weight: bold;
+}
+
+.section-subtitle {
+	font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.bar {
+	border-top: 1px solid #DC3522;
+	padding-bottom: 40px;
+}
+
+.story {
+	margin-bottom: 60px;
+}
+
+.story p {
+	text-align: center;
+	color: #666;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+footer {
+	background-color: #14171D;
+	width: 100%;
+}
+
+.red {
+	color: #DC3522;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.contacts-wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	display: inline-block;
+}
+
+.contacts {
+	padding-top: 10px;
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+.social-media-wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	display: inline-block;
+}
+
+.social-media {
+	font-size: 2em;
+	color: white;
+	padding-right: 25px;
+	text-decoration: none;
+}
+
+.page-indicator {
+	background-color: #DC3522;
+	opacity: 0.7;
+	text-align: center;
+	border-top: 1px solid white;
+}
+
+.page-indicator-text {
+	font-size: 1.75em;
+	padding: 5px;
+	color: white;
+}
+
+.catering-menu-item {
+	padding: 25px;
+}
+
+.catering-menu-image {
+	border-radius: 10px;
+	box-shadow: 2px 0px #e0d4d2;
+}
+
+.catering-text span {
+	display: block;
+}
+
+.contact-form {
+	padding: 40px;
+}
+
+.contactUs-info {
+	padding-top: 10px;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.contactUs-social-media-links {
+	font-size: 2em;
+	color: #DC3522;
+	padding-right: 25px;
+	text-decoration: none;
+}
+
+.input {
+	display: block;
+	background-color: #F3F1ED;
+	height: 50px;
+	width: 100%
+}
+
+.message-box {
+	height: 200px;
+}
+
+.menu-row {
+	background-color: #DC3522;
+	opacity: 0.7;
+	border-bottom: 1px solid white;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+
+@media (min-width: 550px) {
+
+	.order-button {
+		position: relative;
+		left: 75%;
+		top: 40px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.menu-toggle,
+	.main-menu .menu-close {
+    	display: none;
+  	}
+  
+  /* Undo positioning of off-canvas menu */
+	.main-menu {
+		display: flex;
+	    position: relative;
+	    left: auto;
+	    top: auto;
+	    height: auto;
+	  }
+  
+	.main-menu ul {
+	    display: flex;
+  		list-style: none;
+  		margin: 0;
+	    /* Undo off-canvas styling */
+	    padding: 0;
+	    -webkit-box-shadow: none;
+	       -moz-box-shadow: none;
+	            box-shadow: none;
+	    height: 30px;
+	    width: auto;
+	    background: none;
+	  }
+  
+	.main-menu a {
+	    color: white;
+	    border: 0 !important; /* Remove borders from off-canvas styling */
+	  }
+  
+	.main-menu a:hover,
+	.main-menu a:focus {
+	    background: none; /* Remove background from off-canvas styling */
+	    color: white;
+	  }
+
+	.story p {
+		padding-right: 115px;
+		padding-left: 115px;
+	}
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+  background-color: #DC3522;
+  opacity: 0.7;
+}
+
+article {
+  padding: 30px;
+  width: 55em;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+article h2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.logo {
+  	margin: 0 30px 0 10px;
+  	font-size: 1.5em;
+	margin-left: 3%;
+	color: #FFFFFF;
+}

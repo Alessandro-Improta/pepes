@@ -1,0 +1,38 @@
+<div class="page-indicator u-full-width">
+	<span class="page-indicator-text">CONTACT US</span>
+</div>
+<div class="contactUs-image"></div>
+
+<div class="contact-form row">
+	<div class="six columns">
+		<h5><strong>ADDRESS</strong></h5>
+		<a href="#" class="contactUs-info">
+			<span class="fas fa-map-marker-alt red"></span> 747 N. Main St. Spanish Fork, UT 84660
+		</a>
+		<a href="#" class="contactUs-info">
+			<span class="fas fa-phone red"></span> 801-894-9044
+		</a>
+		<br>
+		<h5><strong>WORKING HOURS</strong></h5>
+		<p>11:00 am to 10:00 pm on Monday-Saturday. Closed Sundays</p>
+		<br>
+		<h5><strong>FOLLOW US</strong></h5>
+		<a href="https://www.facebook.com/ppsgrill/" 
+			class="contactUs-social-media-links">
+			<span class="fab fa-facebook-square"></span>
+		</a>
+		<a href="https://www.yelp.com/biz/pepes-grill-spanish-fork?osq=pepe%27s+mexican+grill"
+			class="contactUs-social-media-links">
+			<span class="fab fa-yelp"></span>
+		</a>
+	</div>
+	<div class="six columns">
+		<form class="form" method="post" id="form" name="form" action="https://formspree.io/aimprota30@gmail.com" ng-submit="saveAndResetForm()">
+			<textarea ng-model="message.fullName" name="fullName" class="input" form="form" placeholder="Full Name" required></textarea>
+			<textarea ng-model="message.emailAddress" name="emailAddress" class="input" form="form" placeholder="Email Address" required></textarea>
+			<textarea ng-model="message.subject" name="subject" class="input" form="form" placeholder="Subject" required></textarea>
+			<textarea ng-model="message.body" name="body" class="input message-box" form="form" placeholder="message" required></textarea>
+			<input type="submit" name="submit" class="message-box">
+		</form>
+	</div>
+</div>
