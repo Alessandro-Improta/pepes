@@ -7,7 +7,7 @@ angular.module('pepes').controller('mainController', function($scope, $http) {
 	}
 
 	$scope.getLoyalty = function() {
-		return $http.get('http://wwww.pepes.openode.io/getLoyalty')
+		return $http.get('http://wwww.testing.elitecode.pro/integration/orderingsystem')
 					.then(function(res) {
 						console.log(res.data);
 					})

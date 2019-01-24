@@ -5,7 +5,8 @@
 */
 angular.module('pepes', ['ui.router']);
 
-angular.module('pepes').config(function($stateProvider, $urlRouterProvider) {
+angular.module('pepes').config(function($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider) {
+	$urlMatcherFactoryProvider.strictMode(false);
 		$stateProvider
 			.state('home', {
 				url: '/',
@@ -35,4 +36,6 @@ angular.module('pepes').config(function($stateProvider, $urlRouterProvider) {
 
 		$urlRouterProvider
 			.otherwise('/');
-	});
+	
+	$locationProvider.html5Mode(true);
+});
