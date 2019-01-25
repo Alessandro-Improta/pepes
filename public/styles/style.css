@@ -35,6 +35,7 @@
  Default styles + Mobile first
  Offscreen menu style
 */
+
 .main-menu {
 	display: none;
 }
@@ -56,7 +57,7 @@
 }
 
 .main-menu a:hover,
-.main-menu a:focus {
+.main-menu a:focus, {
   background: #333;
   text-decoration: underline;
 }
@@ -101,6 +102,7 @@
   background: rgba(0,0,0,.85);
   cursor: default;
 }*/
+
 
 .home-image {
 	background-image: url("./images/title.jpg");
